@@ -47,15 +47,13 @@ public class Examwappalyzer
 		//wb.sendKeys("Java");
 		Actions act=new Actions(driver);
 		act.moveToElement(wb);
-        act.click();
+                act.click();
 		act.sendKeys(wb,"Java").build().perform();
-		//act.keyUp(wb,Keys.ENTER);
-		//act.build().perform();
 		
 	}
-	/*@AfterTest
+	@AfterTest
 	public void browserClose()
 	{
 		driver.close();
-	}*/
+	}
 }
